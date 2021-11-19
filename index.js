@@ -11,7 +11,7 @@ const githubToken = process.env.GH_TOKEN;
 const countAllCommits = process.env.ALL_COMMITS.toString() === 'true';
 const kFormat = process.env.K_FORMAT.toString() === 'true';
 
-async function main() {
+async function main() { 
     if (!githubToken) {
         throw new Error('GH_TOKEN is not defined');
     }
